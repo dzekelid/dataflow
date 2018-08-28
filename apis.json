@@ -1,0 +1,33 @@
+{
+	"name": "Streadata.io API Gallery - Dataflow",
+	"description": "This is a repository of dataflow APIs, self-contained as a Github repository, with HTML and YAML representations of the APIs and their surrounding operations.",
+	"image": "http://template.streamdata.gallery/assets/dataflow.png",
+	"created": "2018-02-24",
+	"modified": "2018-08-27",
+	"url": "http://dataflow.streamdata.gallery/apis.json",
+	"specificationVersion": "0.14",
+	"apis": [
+		{
+			"name": "Actility",
+			"x-api-slug": "actility",
+			"description": "Actility is the leader in low power wide area (LoRaWAN and 3GPP) network connectivity management for the Internet of Things: the ThingPark platform",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28250-actility.jpg",
+			"humanURL": "https://www.actility.com",
+			"baseURL": "https://dx-api.thingpark.com//maker/v011/api",
+			"tags": "Dataflow",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/dataflow/master/_listings/actility/openapi.md"
+				}
+			]
+		}
+	],
+	"tags": "Dataflow",
+	"include": [
+		{
+			"name": "Actility",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/dataflow/master/_listings/actility/apis.yaml"
+		}
+	]
+}

@@ -1,12 +1,15 @@
+---
 swagger: "2.0"
 x-collection-name: Actility
-x-complete: 1
+x-complete: 0
 info:
-  title: ThingPark DX Maker API
-  description: api-providing-features-for-device-makers-such-as-preprovisioning-on-standalone-join-servers-
+  title: ThingPark DX Dataflow API Bridge dataflow update
+  description: Updates the Bridge dataflow corresponding to the provided Bridge dataflow
+    ref, if that dataflow is within authorized scopes. Note that when updating a dataflow,
+    all existing attributs must be provided next to your changes.
   version: 1.0.0
 host: dx-api.thingpark.com
-basePath: /maker/v011/api
+basePath: /dataflow/v021/api
 schemes:
 - http
 produces:
@@ -75,37 +78,17 @@ paths:
       - Bridge
       - Dataflow
       - Update
-    delete:
-      summary: Bridge dataflow deletion
-      description: Deletes the Bridge dataflow corresponding to the provided Bridge
-        dataflow ref, if that dataflow is within authorized scopes.
-      operationId: deletes-the-bridge-dataflow-corresponding-to-the-provided-bridge-dataflow-ref-if-that-dataflow-is-wi
-      x-api-path-slug: bridgedataflowsbridgedataflowref-delete
-      parameters:
-      - in: path
-        name: bridgeDataflowRef
-        description: Ref of the Bridge dataflow to delete
-      responses:
-        200:
-          description: OK
-      tags:
-      - Bridge
-      - Dataflow
-      - Deletion
-  /events:
-    get:
-      summary: Dataflow events retrieval
-      description: Retrieves the list of events for all configured dataflows in scope.
-      operationId: retrieves-the-list-of-events-for-all-configured-dataflows-in-scope
-      x-api-path-slug: events-get
-      parameters:
-      - in: query
-        name: dataflowRef
-        description: Ref of the dataflow for which events should be retrieved
-      responses:
-        200:
-          description: OK
-      tags:
-      - Dataflow
-      - Events
-      - Retrieval
+x-streamrank:
+  polling_total_time_average: 0
+  polling_size_download_average: 0
+  streaming_total_time_average: 0
+  streaming_size_download_average: 0
+  change_yes: 0
+  change_no: 0
+  time_percentage: 0
+  size_percentage: 0
+  change_percentage: 0
+  last_run: ""
+  days_run: 0
+  minute_run: 0
+---

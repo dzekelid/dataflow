@@ -7,11 +7,70 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28250-acti
 x-kinRank: "7"
 x-alexaRank: "637591"
 tags: Dataflow
-created: "2018-08-26"
-modified: "2018-08-26"
+created: "2018-08-27"
+modified: "2018-08-27"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/dataflow/master/_listings/actility/apis.md
 specificationVersion: "0.14"
-apis: []
+apis:
+- name: ThingPark DX Dataflow API - Bridge dataflow creation
+  x-api-slug: bridgedataflows-post
+  description: Creates a new Bridge dataflow.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28250-actility.jpg
+  humanURL: https://www.actility.com
+  baseURL: https://dx-api.thingpark.com//dataflow/v021/api
+  tags: Technology, SaaS, Enterprise, ISP, Telecommunications, Internet of Things,
+    API Provider, Parking, Sensors, Energy, Industrial, Profiles, Relative Data, Networks
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/dataflow/master/_listings/actility/bridgedataflows-post-openapi.md
+- name: ThingPark DX Dataflow API - Bridge dataflow retrieval
+  x-api-slug: bridgedataflowsbridgedataflowref-get
+  description: Retrieves the Bridge dataflow corresponding to the provided order ref,
+    if that order is within authorized scopes.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28250-actility.jpg
+  humanURL: https://www.actility.com
+  baseURL: https://dx-api.thingpark.com//dataflow/v021/api
+  tags: Technology, SaaS, Enterprise, ISP, Telecommunications, Internet of Things,
+    API Provider, Parking, Sensors, Energy, Industrial, Profiles, Relative Data, Networks
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/dataflow/master/_listings/actility/bridgedataflowsbridgedataflowref-get-openapi.md
+- name: ThingPark DX Dataflow API - Bridge dataflow update
+  x-api-slug: bridgedataflowsbridgedataflowref-put
+  description: Updates the Bridge dataflow corresponding to the provided Bridge dataflow
+    ref, if that dataflow is within authorized scopes. Note that when updating a dataflow,
+    all existing attributs must be provided next to your changes.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28250-actility.jpg
+  humanURL: https://www.actility.com
+  baseURL: https://dx-api.thingpark.com//dataflow/v021/api
+  tags: Technology, SaaS, Enterprise, ISP, Telecommunications, Internet of Things,
+    API Provider, Parking, Sensors, Energy, Industrial, Profiles, Relative Data, Networks
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/dataflow/master/_listings/actility/bridgedataflowsbridgedataflowref-put-openapi.md
+- name: ThingPark DX Dataflow API - Bridge dataflow deletion
+  x-api-slug: bridgedataflowsbridgedataflowref-delete
+  description: Deletes the Bridge dataflow corresponding to the provided Bridge dataflow
+    ref, if that dataflow is within authorized scopes.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28250-actility.jpg
+  humanURL: https://www.actility.com
+  baseURL: https://dx-api.thingpark.com//dataflow/v021/api
+  tags: Technology, SaaS, Enterprise, ISP, Telecommunications, Internet of Things,
+    API Provider, Parking, Sensors, Energy, Industrial, Profiles, Relative Data, Networks
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/dataflow/master/_listings/actility/bridgedataflowsbridgedataflowref-delete-openapi.md
+- name: ThingPark DX Dataflow API - Dataflow events retrieval
+  x-api-slug: events-get
+  description: Retrieves the list of events for all configured dataflows in scope.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28250-actility.jpg
+  humanURL: https://www.actility.com
+  baseURL: https://dx-api.thingpark.com//dataflow/v021/api
+  tags: Technology, SaaS, Enterprise, ISP, Telecommunications, Internet of Things,
+    API Provider, Parking, Sensors, Energy, Industrial, Profiles, Relative Data, Networks
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/dataflow/master/_listings/actility/events-get-openapi.md
 x-common:
 - type: x-blog-rss
   url: https://www.actility.com/blog/feed/
